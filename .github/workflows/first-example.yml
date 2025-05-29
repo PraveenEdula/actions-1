@@ -9,9 +9,14 @@ jobs:
         - name: first-step
           run:
             echo "This is my first job"
+
+        - name: checkout
+          uses: actions/checkout@v4
+
         - name: List Files
           run:
             ls
+
         - name: read files
           run:
             cat README.md
